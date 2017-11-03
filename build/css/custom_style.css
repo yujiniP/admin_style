@@ -1,2 +1,24 @@
+h3 {font-size: 22px;color:#34495E}
+.x_title h2 {font-size: 18px; font-weight: 400;line-height: 1.2; margin-bottom: 0;}
+.mt5 {margin-top:5px}
+.inblock {display:inline-block}
+.fs12 {font-size:12px}
+.fs13 {font-size:13px}
+.btn, .buttons, .modal-footer .btn+.btn, button { margin-right:0;}
+.btn.btn-warning {margin-right:10px;}
+span.section {font-size:14px; padding-bottom:3px; font-weight: bold}
+.radio {display:inline-block}
+.radio label {padding-right:15px;}
+.form-control-feedback.left {left:3px;}
+.top_nav .navbar-right {width:auto; padding-top:13px; padding-bottom:10px  }
+.top_nav .navbar-right .btn.btn-default.btn-sm {margin-left:5px; margin-bottom: 0;}
 
+/* table 추가 스타일*/
 .table>thead>tr>th, .table>tbody>tr>td {text-align: center;}
+.table-bordered>thead>tr>th.noborder {border-bottom-width: 1px;}
+.table-bordered.table-vm>thead>tr>th {vertical-align: middle;}
+
+/* @media (min-width:768px){
+  .nav_menu .nav.navbar-nav.navbar-right{display:none; background: red}
+
+} */

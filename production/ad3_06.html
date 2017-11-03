@@ -15,6 +15,8 @@
     <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- NProgress -->
     <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+   <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
 
     <!-- Custom Theme Style -->
     <link href="../build/css/custom.min.css" rel="stylesheet">
@@ -267,7 +269,7 @@
           <div class="">
             <div class="page-title">
               <div class="title_left">
-                <h3>기본정보</h3>
+                <h3>업체관리</h3>
               </div>
 
               <!-- <div class="title_right">
@@ -286,78 +288,71 @@
 
             <div class="row">
 
-              <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="x_panel">
-                  <div class="x_title">
-                    <h2>공통코드관리</h2>
-                    <div class="clearfix"></div>
-                  </div>
-
-                  <div class="x_content">
-                    <div class="pull-right">
-                        <button type="button" class="btn btn-success">등록</button>
-                    </div>
-                    <div class="clearfix"></div>
-                    <div class="table-responsive">
-                        <table id="datatable" class="table table-striped table-bordered">
-                          <thead>
-                            <tr>
-                              <th>코드구분</th>
-                              <th>코드명</th>
-                              <th>정렬순서</th>
-                              <th>사용여부</th>
-                              <th>비고</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>ㅇㅇㅇㅇㅇ</td>
-                              <td>ㅇㅇㅇㅇㅇ</td>
-                              <td>홍길동</td>
-                              <td>FKDHSOENFK</td>
-                              <td>MCNDFJEGG4563</td>
-                            </tr>
-                            <tr>
-                              <td>ㅇㅇㅇㅇㅇ</td>
-                              <td>ㅇㅇㅇㅇㅇ</td>
-                              <td>홍길동</td>
-                              <td>FKDHSOENFK</td>
-                              <td>MCNDFJEGG4563</td>
-                            </tr>
-                            <tr>
-                              <td>ㅇㅇㅇㅇㅇ</td>
-                              <td>ㅇㅇㅇㅇㅇ</td>
-                              <td>홍길동</td>
-                              <td>FKDHSOENFK</td>
-                              <td>MCNDFJEGG4563</td>
-                            </tr>
-                            <tr>
-                              <td>ㅇㅇㅇㅇㅇ</td>
-                              <td>ㅇㅇㅇㅇㅇ</td>
-                              <td>홍길동</td>
-                              <td>FKDHSOENFK</td>
-                              <td>MCNDFJEGG4563</td>
-                            </tr>
-                            <tr>
-                              <td>ㅇㅇㅇㅇㅇ</td>
-                              <td>ㅇㅇㅇㅇㅇ</td>
-                              <td>홍길동</td>
-                              <td>FKDHSOENFK</td>
-                              <td>MCNDFJEGG4563</td>
-                            </tr>
-                            <tr>
-                              <td>ㅇㅇㅇㅇㅇ</td>
-                              <td>ㅇㅇㅇㅇㅇ</td>
-                              <td>홍길동</td>
-                              <td>FKDHSOENFK</td>
-                              <td>MCNDFJEGG4563</td>
-                            </tr>
-                          </tbody>
-                        </table>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="x_panel">
+                      <div class="x_title">
+                        <h2>패널티관리</h2>
+                        <div class="clearfix"></div>
                       </div>
+                      <div class="x_content">
+                        <br />
+                        <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+    
+                          <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">지점</label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <select class="form-control">
+                                <option>지점1</option>
+                                <option>지점2</option>
+                                <option>지점3</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">센터</label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <select class="form-control">
+                                <option>센터1</option>
+                                <option>센터2</option>
+                                <option>센터3</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">기사ID/기사명검색</label>
+                            <div class="col-sm-6">
+                              <div class="input-group">
+                                <input type="text" class="form-control">
+                                <span class="input-group-btn">
+                                  <button type="button" class="btn btn-primary">검색</button>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">패널티점수</label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">사유</label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
+                            </div>
+                          </div>
+                          <div class="ln_solid"></div>
+                          <div class="form-group">
+                            <div class="pull-right">
+                              <button type="button" class="btn btn-success">등록</button>
+                              <button type="button" class="btn btn-default">취소</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
