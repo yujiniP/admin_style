@@ -15,10 +15,8 @@
     <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- NProgress -->
     <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
-   <!-- bootstrap-daterangepicker -->
-   <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
-   <!-- bootstrap-datetimepicker -->
-   <link href="../vendors/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css" rel="stylesheet">
+    <!-- iCheck -->
+   <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
 
     <!-- Custom Theme Style -->
     <link href="../build/css/custom.min.css" rel="stylesheet">
@@ -131,7 +129,7 @@
           <div class="">
             <div class="page-title">
               <div class="title_left">
-                <h3>배송관리</h3>
+                <h3>예치금관리</h3>
               </div>
 
               <!-- <div class="title_right">
@@ -153,129 +151,170 @@
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>배송관리</h2>
+                    <h2>예치금내역</h2>
                     <div class="clearfix"></div>
                   </div>
 
                   <div class="x_content">
+                    <div class="form-group">
+                        <div class="form-group">
+                            <label class="control-label col-md-1 col-sm-1">월별</label>
+                            <div class="col-md-2 col-sm-2 col-xs-12">
+                              <select class="form-control">
+                                <option>1월</option>
+                                <option>12월</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-9 col-sm-9 col-xs-12">
+                            <div class="radio">
+                              <label>
+                                <input type="radio" checked="" value="option1" id="optionsRadios1" name="optionsRadios"> 전체
+                              </label>
+                              <label>
+                                <input type="radio" checked="" value="option2" id="optionsRadios2" name="optionsRadios"> 수익금
+                              </label>
+                              <label>
+                                <input type="radio" checked="" value="option3" id="optionsRadios3" name="optionsRadios"> 환불
+                              </label>
+                              <label>
+                                <input type="radio" checked="" value="option4" id="optionsRadios4" name="optionsRadios"> 관리비
+                              </label>
+                              <label>
+                                <input type="radio" checked="" value="option5" id="optionsRadios5" name="optionsRadios"> 배상금
+                              </label>
+                              <label>
+                                <input type="radio" checked="" value="option6" id="optionsRadios6" name="optionsRadios"> 환불
+                              </label>
+                              <label>
+                                <input type="radio" checked="" value="option4" id="optionsRadios4" name="optionsRadios"> 초과금
+                              </label>
+                              <label>
+                                <input type="radio" checked="" value="option5" id="optionsRadios5" name="optionsRadios"> 왕복
+                              </label>
+                              <label>
+                                <input type="radio" checked="" value="option6" id="optionsRadios6" name="optionsRadios"> 쿽전환
+                              </label>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="clearfix"></div>    
                     <div class="pull-right">
-                      <button type="button" class="btn btn-primary">접수대행</button>
+                      <button type="button" class="btn btn-primary">충전하기</button>
                     </div>
                     <div class="clearfix"></div>
                     <div class="table-responsive">
-                      <table id="datatable" class="table table-striped table-bordered table-vm">
+                      <table id="datatable" class="table table-striped table-bordered">
                         <thead>
                           <tr>
-                            <th rowspan="2">날짜</th>
-                            <th rowspan="2">일시</th>
-                            <th rowspan="2">송장번호</th>
-                            <th class="noborder" colspan="4">보내는 곳</th>
-                            <th class="noborder" colspan="3">받는 곳</th>
-                            <th rowspan="2">금액</th>
-                            <th rowspan="2">특이사항</th>
-                          </tr>
-                          <tr>
-                            <th>기관명</th>
-                            <th>거래처명</th>
-                            <th>발송담당자</th>
-                            <th>연락처</th>
-                            <th>고객명</th>
-                            <th>연락처</th>
-                            <th>주소</th>
+                            <th>센터명</th>
+                            <th>지점명</th>
+                            <th>가맹점명</th>
+                            <th>결제일</th>
+                            <th>처리종류</th>
+                            <th>처리내용</th>
+                            <th>결제비용</th>
+                            <th>결제방법</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
-                            <td>2017/11/03</td>
-                            <td>2017/11/03</td>
-                            <td>43455666</td>
                             <td>ㅇㅇㅇㅇㅇ</td>
-                            <td>롯데홈쇼핑</td>
-                            <td>홍길동</td>
-                            <td>02)111-1111</td>
-                            <td>고길동</td>
-                            <td>02)111-1111</td>
-                            <td>서울 중구 세종대로21길</td>
-                            <td>40만원</td>
-                            <td>왕복수거</td>
+                            <td>종로지점</td>
+                            <td>동대문구점</td>
+                            <td>20171102</td>
+                            <td>관리비</td>
+                            <td>월관리비</td>
+                            <td>45,000</td>
+                            <td>ㅇㅇㅇㅇㅇ</td>
                           </tr>
                           <tr>
-                            <td>2017/11/03</td>
-                            <td>2017/11/03</td>
-                            <td>43455666</td>
                             <td>ㅇㅇㅇㅇㅇ</td>
-                            <td>롯데홈쇼핑</td>
-                            <td>홍길동</td>
-                            <td>02)111-1111</td>
-                            <td>고길동</td>
-                            <td>02)111-1111</td>
-                            <td>서울 중구 세종대로21길</td>
-                            <td>40만원</td>
-                            <td>왕복수거</td>
+                            <td>종로지점</td>
+                            <td>동대문구점</td>
+                            <td>20171102</td>
+                            <td>물품 배상금</td>
+                            <td>ㅇㅇ기사파손</td>
+                            <td>45,000</td>
+                            <td>ㅇㅇㅇㅇㅇ</td>
                           </tr>
                           <tr>
-                            <td>2017/11/03</td>
-                            <td>2017/11/03</td>
-                            <td>43455666</td>
                             <td>ㅇㅇㅇㅇㅇ</td>
-                            <td>롯데홈쇼핑</td>
-                            <td>홍길동</td>
-                            <td>02)111-1111</td>
-                            <td>고길동</td>
-                            <td>02)111-1111</td>
-                            <td>서울 중구 세종대로21길</td>
-                            <td>40만원</td>
-                            <td>왕복수거</td>
+                            <td>종로지점</td>
+                            <td>동대문구점</td>
+                            <td>20171102</td>
+                            <td>중복 결제 환불</td>
+                            <td>시스템 오류</td>
+                            <td>45,000</td>
+                            <td>ㅇㅇㅇㅇㅇ</td>
                           </tr>
                           <tr>
-                            <td>2017/11/03</td>
-                            <td>2017/11/03</td>
-                            <td>43455666</td>
                             <td>ㅇㅇㅇㅇㅇ</td>
-                            <td>롯데홈쇼핑</td>
-                            <td>홍길동</td>
-                            <td>02)111-1111</td>
-                            <td>고길동</td>
-                            <td>02)111-1111</td>
-                            <td>서울 중구 세종대로21길</td>
-                            <td>40만원</td>
-                            <td>왕복수거</td>
+                            <td>종로지점</td>
+                            <td>동대문구점</td>
+                            <td>20171102</td>
+                            <td>초과 금액</td>
+                            <td>기본금 초과</td>
+                            <td>45,000</td>
+                            <td>ㅇㅇㅇㅇㅇ</td>
                           </tr>
                           <tr>
-                            <td>2017/11/03</td>
-                            <td>2017/11/03</td>
-                            <td>43455666</td>
                             <td>ㅇㅇㅇㅇㅇ</td>
-                            <td>롯데홈쇼핑</td>
-                            <td>홍길동</td>
-                            <td>02)111-1111</td>
-                            <td>고길동</td>
-                            <td>02)111-1111</td>
-                            <td>서울 중구 세종대로21길</td>
-                            <td>40만원</td>
-                            <td>왕복수거</td>
+                            <td>종로지점</td>
+                            <td>동대문구점</td>
+                            <td>20171102</td>
+                            <td>환불</td>
+                            <td>예치금 환불</td>
+                            <td>45,000</td>
+                            <td>ㅇㅇㅇㅇㅇ</td>
+                          </tr>
+                          <tr>
+                            <td>ㅇㅇㅇㅇㅇ</td>
+                            <td>종로지점</td>
+                            <td>동대문구점</td>
+                            <td>20171102</td>
+                            <td>왕복요금</td>
+                            <td>수거요청</td>
+                            <td>45,000</td>
+                            <td>ㅇㅇㅇㅇㅇ</td>
+                          </tr>
+                          <tr>
+                            <td>ㅇㅇㅇㅇㅇ</td>
+                            <td>종로지점</td>
+                            <td>동대문구점</td>
+                            <td>20171102</td>
+                            <td>쿽전화</td>
+                            <td>쿽전화 추가요금</td>
+                            <td>45,000</td>
+                            <td>ㅇㅇㅇㅇㅇ</td>
+                          </tr>
+                          <tr>
+                            <td>ㅇㅇㅇㅇㅇ</td>
+                            <td>종로지점</td>
+                            <td>동대문구점</td>
+                            <td>20171102</td>
+                            <td>쿽전화</td>
+                            <td>쿽전화 추가요금</td>
+                            <td>45,000</td>
+                            <td>ㅇㅇㅇㅇㅇ</td>
+                          </tr>
+                          <tr>
+                            <td>ㅇㅇㅇㅇㅇ</td>
+                            <td>종로지점</td>
+                            <td>동대문구점</td>
+                            <td>20171102</td>
+                            <td>쿽전화</td>
+                            <td>쿽전화 추가요금</td>
+                            <td>45,000</td>
+                            <td>ㅇㅇㅇㅇㅇ</td>
                           </tr>
                         </tbody>
                       </table>
                     </div>
                   </div>
-                  <p class="mt5 inblock fs13">표기 항목 : 날짜, 운송장번호(클릭시 운송장 원본보기), 현상태, 보내는 사람 – 거래처명, 보내는 사람 – 연락처, 받는 사람 – 고객명, 받는 사람 – 연락처, 받는 사람 – 주소 , 받는 사람 – 특이사항,  접수 – 접수일시, 접수 – 배송료, 접수 – 추가요금, 접수 – 총금액, 접수 – 접수기사,  집하 – 집하일시, 집하 – 집하기사, 배차 – 배차일시 , 배차 - 배차기사 , 배차 – 배송완료시간, 배송 확인 고객, 배송시 특이사항</p>
                 </div>
               </div>
             </div>
-
-            <div class="btn-group">
-                <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button" aria-expanded="false"> Dropdown <span class="caret"></span> </button>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Dropdown link 1</a>
-                  </li>
-                  <li><a href="#">Dropdown link 2</a>
-                  </li>
-                  <li><a href="#">Dropdown link 3</a>
-                  </li>
-                </ul>
-            </div>
-
           </div>
         </div>
         <!-- /page content -->
@@ -301,11 +340,6 @@
     <script src="../vendors/nprogress/nprogress.js"></script>
     <!-- iCheck -->
     <script src="../vendors/iCheck/icheck.min.js"></script>
-    <!-- bootstrap-daterangepicker -->
-    <script src="../vendors/moment/min/moment.min.js"></script>
-    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
-    <!-- bootstrap-datetimepicker -->    
-    <script src="../vendors/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
 
     <!-- Custom Theme Scripts -->
     <script src="../build/js/custom.min.js"></script>

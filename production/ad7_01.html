@@ -129,7 +129,7 @@
           <div class="">
             <div class="page-title">
               <div class="title_left">
-                <h3>업체관리</h3>
+                <h3>예치금관리</h3>
               </div>
 
               <!-- <div class="title_right">
@@ -151,7 +151,7 @@
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="x_panel">
                       <div class="x_title">
-                        <h2>패널티관리</h2>
+                        <h2>예치금충전</h2>
                         <div class="clearfix"></div>
                       </div>
                       <div class="x_content">
@@ -159,17 +159,7 @@
                         <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
     
                           <div class="form-group">
-                            <label class="control-label col-md-3 col-sm-3 col-xs-12">지점</label>
-                            <div class="col-md-6 col-sm-6 col-xs-12">
-                              <select class="form-control">
-                                <option>지점1</option>
-                                <option>지점2</option>
-                                <option>지점3</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <label class="control-label col-md-3 col-sm-3 col-xs-12">센터</label>
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">센터명</label>
                             <div class="col-md-6 col-sm-6 col-xs-12">
                               <select class="form-control">
                                 <option>센터1</option>
@@ -179,33 +169,66 @@
                             </div>
                           </div>
                           <div class="form-group">
-                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">기사ID/기사명검색</label>
-                            <div class="col-sm-6">
-                              <div class="input-group">
-                                <input type="text" class="form-control">
-                                <span class="input-group-btn">
-                                  <button type="button" class="btn btn-primary">검색</button>
-                                </span>
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">지점명</label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <select class="form-control">
+                                <option>지점1</option>
+                                <option>지점2</option>
+                                <option>지점3</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">가맹점명</label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <select class="form-control">
+                                <option>가맹점1</option>
+                                <option>가맹점2</option>
+                                <option>가맹점3</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">현재예치금</label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="birthday" class="date-picker form-control col-md-7 col-xs-12 bg-gray" required="required" type="text">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">추가할 예치금</label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">결제수단</label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <div class="radio">
+                                <label>
+                                  <input type="radio" checked="" value="option1" id="optionsRadios1" name="optionsRadios"> 가상계좌입금
+                                </label>
                               </div>
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <label class="control-label col-md-3 col-sm-3 col-xs-12">패널티점수</label>
-                            <div class="col-md-6 col-sm-6 col-xs-12">
-                              <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <label class="control-label col-md-3 col-sm-3 col-xs-12">사유</label>
-                            <div class="col-md-6 col-sm-6 col-xs-12">
-                              <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
+                              <div class="radio">
+                                <label>
+                                  <input type="radio" checked="" value="option2" id="optionsRadios2" name="optionsRadios"> 온라인결제
+                                </label>
+                              </div>
+                              <div class="radio">
+                                <label>
+                                  <input type="radio" checked="" value="option3" id="optionsRadios3" name="optionsRadios"> 무통장입금
+                                </label>
+                              </div>
+                              <div class="radio">
+                                <label>
+                                  <input type="radio" checked="" value="option3" id="optionsRadios3" name="optionsRadios"> 현금입금
+                                </label>
+                              </div>
                             </div>
                           </div>
                           <div class="ln_solid"></div>
                           <div class="form-group">
                             <div class="pull-right">
                               <button type="button" class="btn btn-success">등록</button>
-                              <button type="button" class="btn btn-default">취소</button>
                             </div>
                           </div>
                         </form>
